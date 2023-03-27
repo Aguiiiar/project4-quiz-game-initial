@@ -14,7 +14,7 @@
 
       <section class="result" v-if="answerSubmitted">
         <template v-if="chosenAnswer === correctAnswer">
-          <h4 v-html="'&#9989; Congratulations, the answer ' + correctAnswer + 'is correct.'"></h4>
+          <h4 v-html="'&#9989; Congratulations, the answer ' + correctAnswer + ' is correct.'"></h4>
         </template>
         <template v-else>
           <h4 v-html="'&#10060; I`m sorry, you picked wrong answer. The correct   is ' + correctAnswer + '.'"></h4>
@@ -26,7 +26,7 @@
 </template>
 
 <script>
-const api = "https://opentdb.com/api.php?amount=1&category=18"
+const api = "https://opentdb.com/api.php?amount=1"
 import Scoreboard from './components/Scoreboard.vue';
 
 export default {
